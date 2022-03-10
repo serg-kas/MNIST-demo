@@ -56,7 +56,8 @@ def mnist_predict(model, img_FILE, out_FILE):
     pred = np.argmax(prediction[0])
     # print(pred)
     # Напечатаем результат работы
-    print("Файл {0} распознан как {1}".format(img_FILE, pred))
+    # print("Файл {0} распознан как {1}".format(img_FILE, pred))
+    print("File {0} predicted as {1}".format(img_FILE, pred))
 
     # Напишем значение pred на картинке
     cv2.putText(curr_image, "pred = " + str(pred), (5, 25),

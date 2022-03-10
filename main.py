@@ -58,9 +58,11 @@ def process(source_PATH, out_PATH, model_PATH):
 
     # Сообщаем что обработали
     if len(img_files) == 0:
-        print('Нет картинок для обработки.')
+        # print('Нет картинок для обработки.')
+        print('The are no pictures to predict.')
     else:
-        print('Обработали {0} картинок.'.format(len(img_files)))
+        # print('Обработали {0} картинок.'.format(len(img_files)))
+        print('Predicted {0} pictures.'.format(len(img_files)))
 
 
 if __name__ == '__main__':
